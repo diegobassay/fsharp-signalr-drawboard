@@ -6274,7 +6274,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "FSharp.Core >= 4.6.2",
-      "Giraffe",
+      "Giraffe >= 3.6.0",
       "Microsoft.NETCore.App >= 3.0.0-preview6-27804-01"
     ]
   },
@@ -6318,7 +6318,7 @@
           },
           "Giraffe": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[3.6.0, )"
           },
           "Microsoft.NETCore.App": {
             "include": "None",
