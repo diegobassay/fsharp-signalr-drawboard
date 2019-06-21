@@ -29,5 +29,4 @@ Acessar a url abaixo em dois browsers diferentes (Firefox/Chrome/IE/Opera) ao me
 http://localhost:5000/
 ```
 ## Demonstração
-
 ![desenhando](https://github.com/diegobassay/fsharp-signalr-drawboard/blob/master/web/demo.gif)
