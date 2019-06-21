@@ -6,16 +6,16 @@ open Microsoft.AspNetCore.SignalR
 open Microsoft.Extensions.DependencyInjection
 
 let webApp =
-    choose [ route "/about"   >=> text "Tutorial F# and SignalR : diegobassay@gmail.com" ]
+      choose [ route "/about"   >=> text "Tutorial F# and SignalR : diegobassay@gmail.com" ]
 
 type InterfaceClientOperations = 
   abstract member ReceiveCoordenates :int * int * bool -> System.Threading.Tasks.Task
 
 type DrawBoardHub () =
   inherit Hub<InterfaceClientOperations> ()
-  /// Passando mensagem para todos os clientes
+  // Passando mensagem para todos os clientes
   member this.SendCoordenates (x: int, y: int, isMousePressed: bool) = 
-    printf "Enviando cooordenadas %i %i para o cliente!\n" x y
+    printf "Enviando coordenadas %i %i para o cliente!\n" x y
     this.Clients.All.ReceiveCoordenates(x, y, isMousePressed)    
 
 type Startup() =
